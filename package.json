@@ -9,9 +9,11 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "format": "prettier --write src/"
+    "format": "prettier --write src/",
+    "commit": "cz"
   },
   "dependencies": {
+    "commitlint": "^17.4.4",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
   },
@@ -22,6 +24,9 @@
     "@vue/eslint-config-prettier": "^7.1.0",
     "@vue/eslint-config-typescript": "^11.0.2",
     "@vue/tsconfig": "^0.1.3",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^7.0.0",
     "eslint": "^8.34.0",
     "eslint-plugin-vue": "^9.9.0",
     "lint-staged": "^13.1.2",
@@ -40,5 +45,13 @@
       "prettier --write",
       "eslint --fix"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "./cz-configrc.js"
+    }
   }
 }

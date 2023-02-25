@@ -26,3 +26,5 @@ coverage
 *.njsproj
 *.sln
 *.sw?
+/.cz-configrc.js
+/cz-configrc.js
