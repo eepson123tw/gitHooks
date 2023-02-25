@@ -33,7 +33,7 @@
     "yorkie": "^2.0.0"
   },
   "gitHooks": {
-    "pre-commit": "lint-staged --concurrent false"
+    "pre-commit": "lint-staged -v --concurrent false"
   },
   "lint-staged": {
     "*.{js,jsx,vue,ts,tsx}": [
